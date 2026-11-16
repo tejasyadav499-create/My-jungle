@@ -1,0 +1,157 @@
+
+<html>
+
+<head>
+    <title>My Jungle Explorer</title>
+    
+  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            position: relative;
+            background-color: #fbf9f3;
+            color: #2c2a29;
+        }
+
+        /* Custom Carousel Slides with New Color Palette */
+        .jungle-slide {
+            height: 230px;
+            text-align: center;
+            padding-top: 75px;
+            color: #ffffff;
+        }
+
+        .slide-canopy {
+            background: linear-gradient(135deg, #1b4332, #2d6a4f);
+        }
+
+        .slide-waterfall {
+            background: linear-gradient(135deg, #006d77, #2a9d8f);
+        }
+
+        .slide-temple {
+            background: linear-gradient(135deg, #9c6644, #bc6c25);
+        }
+
+        /* Custom Navbar Styling */
+        .navbar-custom {
+            background-color: #1b4332;
+        }
+
+        .navbar-custom .nav-link.active {
+            color: #ffd166 !important;
+            font-weight: bold;
+            border-bottom: 2px solid #ffd166;
+        }
+
+        /* Scrollspy Content Sections */
+        .section {
+            padding: 75px 25px;
+            min-height: 330px;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.06);
+        }
+
+        #canopy {
+            background-color: #e9f5db;
+        }
+
+        #waterfall {
+            background-color: #e0fbfc;
+        }
+
+        #temple {
+            background-color: #faedcd;
+        }
+
+        .section h2 {
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target="#jungleNav" data-offset="60">
+
+   
+    <div id="jungleCarousel" class="carousel slide" data-ride="carousel">
+
+        <ol class="carousel-indicators">
+            <li data-target="#jungleCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#jungleCarousel" data-slide-to="1"></li>
+            <li data-target="#jungleCarousel" data-slide-to="2"></li>
+        </ol>
+
+       
+        <div class="carousel-inner">
+            <div class="carousel-item active jungle-slide slide-canopy">
+                <h3>🌴 Emerald Canopy Walk</h3>
+                <p>High above the forest floor among giant trees</p>
+            </div>
+            <div class="carousel-item jungle-slide slide-waterfall">
+                <h3>💧 Hidden Lagoon Falls</h3>
+                <p>Crystal streams and misty jungle pools</p>
+            </div>
+            <div class="carousel-item jungle-slide slide-temple">
+                <h3>🗿 Ancient Jungle Ruins</h3>
+                <p>Forgotten stone trails covered in wild vines</p>
+            </div>
+        </div>
+
+
+        <a class="carousel-control-prev" href="#jungleCarousel" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#jungleCarousel" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+
+  
+    <nav id="jungleNav" class="navbar navbar-expand-sm navbar-dark navbar-custom sticky-top shadow-sm">
+        <span class="navbar-brand font-weight-bold">🧭 My Jungle Explorer</span>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.huetrail.com/the-emerald-canopy">Emerald Canopy</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://avatar.fandom.com/wiki/Waterfall_lagoon">Lagoon Falls</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://en.wikipedia.org/wiki/Ruins">Ancient Ruins</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container my-4">
+
+        <div id="canopy" class="section rounded mb-3">
+            <h2 style="color: #1b4332;">🌴 Emerald Canopy Walk</h2>
+            <p>Climb into the sunlit treetops where toucans, tree frogs, and swinging gibbons live high above the jungle
+                floor.</p>
+            <p><strong>Explorer Tip:</strong> Bring binoculars to spot colorful birds nesting in the highest branches.
+            </p>
+        </div>
+
+        <div id="waterfall" class="section rounded mb-3">
+            <h2 style="color: #006d77;">💧 Hidden Lagoon Falls</h2>
+            <p>Follow the rushing turquoise stream to a secret waterfall surrounded by giant ferns, dragonflies, and
+                river otters.</p>
+            <p><strong>Explorer Tip:</strong> Listen for the splash of freshwater fish swimming near the mossy rocks.
+            </p>
+        </div>
+
+        <div id="temple" class="section rounded mb-3">
+            <h2 style="color: #9c6644;">🗿 Ancient Jungle Ruins</h2>
+            <p>Uncover moss-covered stone pathways deep in the wild where jaguars prowl quietly at dusk and orchids
+                bloom on old walls.</p>
+            <p><strong>Explorer Tip:</strong> Stay on the marked explorer trail while studying the ancient carvings.</p>
+        </div>
+
+    </div>
+
+   
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
